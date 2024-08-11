@@ -18,7 +18,9 @@ function watchFiles() {
 
 function convertWebp() {
   return gulp
-    .src("./assets/defaultimages/*.*")
+    .src("./assets/defaultimages/*.*", {
+      encoding: false,
+    })
     .pipe(webp())
     .pipe(gulp.dest("./assets/images"));
 }
