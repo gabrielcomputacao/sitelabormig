@@ -1,0 +1,51 @@
+
+.footer{
+
+    background-color: $gray;
+    width: 100%;
+
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1.5rem 4rem;
+}
+
+.contatos, .localizacao{
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: flex-start;
+
+
+
+    p{
+        font-size: 24px;
+        color: $white;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+    ul {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: start;
+        align-items: flex-start;
+        color: $white;
+            font-size: 14px;
+        li{
+            span{
+                
+                font-size: 20px;
+                font-weight: bold;
+            }
+            
+        }
+    }
+
+
+}

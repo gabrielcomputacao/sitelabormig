@@ -1,0 +1,159 @@
+
+main{
+    min-height: 650px;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.banner{
+    width: 100%;
+    height: 350px;
+    background-image: url('../assets/images/bannerpilar.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-text{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+
+    h2{
+        font-size: 50px;
+        color: $white;
+        font-weight:  bold;
+    }
+
+}
+
+.introduction{
+    h1{
+        font-size: 40px;
+        text-align: center;
+        padding: 0.7rem 0;
+        font-family: 'rubikRegular','Courier New', Courier, monospace;
+        background-color: rgba(246, 242, 242, 0.6);
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+
+.content-introduction{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    padding: 2rem 0 0 0;
+}
+
+
+
+.introduction-img{
+    width: 450px;
+    height: 450px;
+   
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.introduction-text{
+    width: 100%;
+    height: 100%;
+    align-self: self-start;
+    max-width: 45%;
+    font-size: 18px;
+    line-height: 1.7rem;
+    font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+
+    button{
+        padding: 0.8rem 4rem;
+        margin-top: 5rem;
+        background-color: $greendark;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-family: 'rubikSemiBold', 'Courier New', Courier, monospace;
+    }
+
+    p{
+        padding-top: 1rem ;
+    }
+
+}
+
+/* second section */
+
+.service{
+    width: 100%;
+    background-color: $bluelight;
+
+    .content-service{
+        padding: 1rem 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        
+
+        .content-service-text{
+            width: 100%;
+            height: 100%;
+            align-self: flex-start;
+
+            h2{
+                font-size: 30px;
+                font-family: 'rubikBold', 'Courier New', Courier, monospace;
+                background-color: rgba(246, 242, 242, 0.6);
+                padding: 0.5rem;
+                text-align: center;
+            }
+
+            .service-text-list{
+                padding-top: 2rem;
+
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    gap: 2rem;
+                    
+                    div{
+
+                        display: flex;
+                        justify-content: center;
+                        gap: 2rem;
+                        flex-direction: column;
+                        align-self: flex-start;
+
+                        li{
+                            background-color: rgba(246, 242, 242, 0.6);
+                            width: auto;
+                            max-width: 300px;
+                            padding: 0.7rem 0.5rem;
+                            border-radius: 5px;
+
+                            font-family: 'rubikSemiBold' ,'Courier New', Courier, monospace;
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+    }
+
+
+}
+
+
