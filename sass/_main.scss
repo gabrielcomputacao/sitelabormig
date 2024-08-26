@@ -93,11 +93,11 @@ main{
 
 /* second section */
 
-.service{
+.help{
     width: 100%;
     background-color: $bluelight;
 
-    .content-service{
+    .content-help{
         padding: 1rem 0;
         display:flex;
         justify-content: center;
@@ -106,7 +106,7 @@ main{
 
         
 
-        .content-service-text{
+        .content-help-text{
             width: 100%;
             height: 100%;
             align-self: flex-start;
@@ -119,7 +119,7 @@ main{
                 text-align: center;
             }
 
-            .service-text-list{
+            .help-text-list{
                 padding-top: 2rem;
 
                 ul{
@@ -156,4 +156,32 @@ main{
 
 }
 
+/*  third section */
+
+.content-service{
+    h2{
+        font-size: 30px;
+        text-align: center;
+        padding: 0.7rem 0;
+        font-family: 'rubikRegular','Courier New', Courier, monospace;
+        background-color: rgba(246, 242, 242, 0.6);
+        width: 800px;
+        margin: 0 auto;
+    }
+
+
+    .flex-content-service{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+
+    }
+
+    .card-service{
+        width: 250px;
+        height: 250px;
+    }
+
+}
 
