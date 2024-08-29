@@ -32,15 +32,17 @@ main{
 }
 
 .introduction{
+    padding-bottom: 2rem;
     h1{
-        font-size: 40px;
-        text-align: center;
-        padding: 0.7rem 0;
-        font-family: 'rubikRegular','Courier New', Courier, monospace;
+        font-size: 30px;
+        padding: 0.7rem 0.3rem;
+        font-family: 'rubikSemiBold','Courier New', Courier, monospace;
         background-color: rgba(246, 242, 242, 0.6);
-        width: 800px;
         margin: 0 auto;
+        line-height: 2.3rem;
+        color: $bluelight;
     }
+    
 }
 
 
@@ -63,6 +65,7 @@ main{
         width: 100%;
         height: 100%;
         border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
 }
 
@@ -77,16 +80,35 @@ main{
 
     button{
         padding: 0.8rem 4rem;
-        margin-top: 5rem;
-        background-color: $greendark;
+        margin-top: 3rem;
+        background-color: rgba(246, 242, 242, 0.81);
         border: none;
         cursor: pointer;
         font-weight: 700;
+        border-radius: 2px;
         font-family: 'rubikSemiBold', 'Courier New', Courier, monospace;
     }
 
     p{
         padding-top: 1rem ;
+    }
+
+    .data-build{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        gap: 1rem;
+
+        .card-data{
+            width: 100%;
+            padding: 0.7rem;
+            background-color: #222;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'rubikMedium', 'Courier New', Courier, monospace;
+            margin-top: 1.5rem;
+            color: $white;
+        }
     }
 
 }
@@ -95,7 +117,19 @@ main{
 
 .help{
     width: 100%;
-    background-color: $bluelight;
+    margin: 2rem 0;
+
+    h2{
+        font-size: 30px;
+        font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+        background-color: $bluelight;
+        color: $white;
+        padding: 0.9rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+        margin-bottom: 2rem;
+    }
 
     .content-help{
         padding: 1rem 0;
@@ -103,49 +137,62 @@ main{
         justify-content: center;
         align-items: center;
         gap: 4rem;
-
-        
+        width: 100%;
 
         .content-help-text{
             width: 100%;
             height: 100%;
             align-self: flex-start;
 
-            h2{
-                font-size: 30px;
-                font-family: 'rubikBold', 'Courier New', Courier, monospace;
-                background-color: rgba(246, 242, 242, 0.6);
-                padding: 0.5rem;
-                text-align: center;
-            }
+           
 
             .help-text-list{
-                padding-top: 2rem;
-
                 ul{
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-around;
                     gap: 2rem;
+                    flex-wrap: wrap;
                     
-                    div{
-
-                        display: flex;
-                        justify-content: center;
-                        gap: 2rem;
-                        flex-direction: column;
-                        align-self: flex-start;
-
                         li{
                             background-color: rgba(246, 242, 242, 0.6);
                             width: auto;
-                            max-width: 300px;
-                            padding: 0.7rem 0.5rem;
+                            width: 300px;
+                            min-height: 100px;
+                            padding: 1rem;
+                            text-align: center;
                             border-radius: 5px;
-
+                            gap: 0.5rem;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                             font-family: 'rubikSemiBold' ,'Courier New', Courier, monospace;
-                        }
-                    }
+                            
+                            a{
+                                width: 100%;
+                                margin-top: 1rem;
+                                div{
+                                    width: auto;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
 
+                                    span{
+                                        background-color: $bluelight;
+                                        padding: 0.2rem 0.5rem;
+                                        color: $white;
+                                        border-radius: 5px;
+                                    }
+
+
+                                }
+
+                            }
+
+                        
+                        }
+                    
+                        
 
                 }
             }
@@ -156,7 +203,7 @@ main{
 
 }
 
-/*  third section */
+/*  third section - service */
 
 .content-service{
     h2{
@@ -164,8 +211,9 @@ main{
         text-align: center;
         padding: 0.7rem 0;
         font-family: 'rubikRegular','Courier New', Courier, monospace;
-        background-color: rgba(246, 242, 242, 0.6);
-        width: 800px;
+        background-color: $bluelight;
+        color: $white;
+        max-width: 800px;
         margin: 0 auto;
     }
 
@@ -175,12 +223,68 @@ main{
         justify-content: center;
         align-items: center;
         padding: 2rem 0;
+        flex-wrap: wrap;
+        gap: 4rem;
 
     }
 
     .card-service{
-        width: 250px;
-        height: 250px;
+
+        width: 350px;
+        height: 390px;
+        box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+
+        .card-service-img{
+            img{
+                width: 348px;
+                height: 200px;
+            }
+
+        }
+
+        .card-service-content{
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            h3{
+                font-size: 20px;
+                text-align: center;
+                font-family: 'rubikMedium','Courier New', Courier, monospace;  
+            }
+    
+            p{
+                font-size: 16px;
+                font-family: 'rubikRegular','Courier New', Courier, monospace;
+                justify-self: start;
+            }
+        }
+        
+        .card-link{ 
+
+            display: flex;
+            justify-content: flex-end;
+            padding: 0.7rem;
+            
+            a{
+                color: $bluestrong;
+                text-decoration: underline;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+        }
+
+
+
     }
 
 }
