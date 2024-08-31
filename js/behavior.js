@@ -11,3 +11,14 @@ navbar.addEventListener("click", () => {
     isInvisible = true;
   }
 });
+
+/* accordion */
+
+const answers = document.querySelectorAll(".topic-answers");
+const topicAnswers = document.querySelectorAll(".answer-topic");
+
+for (let index = 0; index < answers.length; index++) {
+  answers[index].addEventListener("click", () => {
+    topicAnswers[index].classList.toggle("topic-invisible");
+  });
+}

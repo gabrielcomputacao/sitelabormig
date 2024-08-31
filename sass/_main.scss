@@ -11,17 +11,26 @@ main{
 
 .banner{
     width: 100%;
-    height: 350px;
-    background-image: url('../assets/images/bannerpilar.webp');
+    height: 550px;
+    background-image: url('../assets/images/obragrande.webp');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @media screen and (max-width: 500px){
+        background-position: right;
+
+    }
+
 }
 
 .banner-text{
     position: absolute;
-    top: 60px;
-    left: 60px;
+    top: 120px;
+    left: 100px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem;
+    border-radius: 2px;
 
     h2{
         font-size: 50px;
@@ -29,18 +38,43 @@ main{
         font-weight:  bold;
     }
 
+    h5{
+        color: $bluelight;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 0.6rem;
+        font-family: 'rubikBold','Courier New', Courier, monospace;
+    }
+
+    @media screen and (max-width: 710px){
+        left: 0px;
+        width: 90%;
+        position: relative;
+        margin:  0 auto;
+        border-radius: 2px;
+    }
+
+}
+
+#whatsapp{
+    position: fixed;
+    top: 85%;
+    right: 2%;
 }
 
 .introduction{
     padding-bottom: 2rem;
     h1{
-        font-size: 30px;
-        padding: 0.7rem 0.3rem;
+        font-size: 26px;
+        padding: 0.7rem 0 ;
         font-family: 'rubikSemiBold','Courier New', Courier, monospace;
-        background-color: rgba(246, 242, 242, 0.6);
         margin: 0 auto;
         line-height: 2.3rem;
         color: $bluelight;
+    }
+
+    @media screen and (max-width: 1000px){
+        text-align: center;
     }
     
 }
@@ -52,6 +86,13 @@ main{
     gap: 4rem;
     align-items: center;
     padding: 2rem 0 0 0;
+
+    @media screen and (max-width: 1000px){
+        flex-wrap: wrap;
+        padding: 0 0.5rem 0.5rem;
+    }
+
+
 }
 
 
@@ -67,6 +108,20 @@ main{
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
+
+    @media screen and (max-width: 450px){
+        height: 350px;
+        width: 350px;
+    }
+
+    @media screen and (max-width: 350px){
+      
+        height: 250px;
+        width: 250px;
+    }
+
+
+
 }
 
 .introduction-text{
@@ -78,37 +133,39 @@ main{
     line-height: 1.7rem;
     font-family: 'rubikRegular', 'Courier New', Courier, monospace;
 
+    @media screen and (max-width: 1000px){
+        max-width: 100%;
+    }
+
     button{
         padding: 0.8rem 4rem;
         margin-top: 3rem;
-        background-color: rgba(246, 242, 242, 0.81);
+        background-color: rgba(3, 103, 82, 0.8);
         border: none;
         cursor: pointer;
         font-weight: 700;
-        border-radius: 2px;
-        font-family: 'rubikSemiBold', 'Courier New', Courier, monospace;
+        border-radius: 5px;
+        font-family: 'rubikRegular', 'Courier New', Courier, monospace;
     }
 
     p{
-        padding-top: 1rem ;
+        padding-top: 0.5rem ;
+        font-family: 'rubikRegular', 'Courier New', Courier, monospace;
     }
 
     .data-build{
-        display: flex;
-        justify-content: start;
-        width: 100%;
-        gap: 1rem;
+       padding: 0.7rem;
+       background-color: rgba(45, 104, 147, 0.8);
+       color: $white;
+       margin-top: 1rem;
 
-        .card-data{
-            width: 100%;
-            padding: 0.7rem;
-            background-color: #222;
-            text-align: center;
-            font-size: 20px;
-            font-family: 'rubikMedium', 'Courier New', Courier, monospace;
-            margin-top: 1.5rem;
-            color: $white;
+        p{
+            font-family: 'rubikLight','Courier New', Courier, monospace;
+            span{
+                font-family: 'rubikBold','Courier New', Courier, monospace;
+            }
         }
+
     }
 
 }
@@ -129,6 +186,13 @@ main{
         margin: 0 auto;
         max-width: 800px;
         margin-bottom: 2rem;
+
+        @media screen and (max-width: 800px){
+            width: 90%;
+
+        }
+
+
     }
 
     .content-help{
@@ -168,6 +232,12 @@ main{
                             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                             font-family: 'rubikSemiBold' ,'Courier New', Courier, monospace;
                             
+                            @media screen and (max-width: 300px){
+                                width: 90%;
+                    
+                            }
+
+
                             a{
                                 width: 100%;
                                 margin-top: 1rem;
@@ -178,10 +248,10 @@ main{
                                     justify-content: center;
 
                                     span{
-                                        background-color: $bluelight;
+                                        background-color: rgba(3, 103, 82, 0.8);
                                         padding: 0.2rem 0.5rem;
                                         color: $white;
-                                        border-radius: 5px;
+                                        border-radius: 2px;
                                     }
 
 
@@ -215,6 +285,10 @@ main{
         color: $white;
         max-width: 800px;
         margin: 0 auto;
+
+        @media screen and (max-width: 800px){
+            width: 90%;
+        }
     }
 
 
@@ -238,10 +312,24 @@ main{
         justify-content: space-between;
         border-radius: 5px;
 
+        @media screen and (max-width: 350px){
+            width: 90%;
+            height: auto;
+        }
+
         .card-service-img{
             img{
                 width: 348px;
                 height: 200px;
+            }
+
+            @media screen and (max-width: 350px){
+                
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+    
             }
 
         }
@@ -284,6 +372,118 @@ main{
         }
 
 
+
+    }
+
+}
+
+.content-questions{
+    h3{
+            font-size: 30px;
+            text-align: center;
+            padding: 0.7rem 0;
+            font-family: 'rubikRegular','Courier New', Courier, monospace;
+            background-color: $bluelight;
+            color: $white;
+            max-width: 800px;
+            margin: 0 auto;
+
+            @media screen and (max-width: 800px){
+                width: 90%;
+    
+            }
+    }
+
+    .topic-invisible{
+        display: none;
+    }
+
+    .questions{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem 0 1rem 0;
+
+        @media screen and (max-width: 1000px){
+          
+            flex-direction: column-reverse;
+            width: 100%;
+            align-items: center;
+
+        }
+
+
+
+    }
+
+
+    .questions-img{
+        width: 450px;
+        height: 450px;
+        align-self: flex-start;
+    
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        @media screen and (max-width: 1000px){
+          
+            align-self: center;
+            
+        }
+        @media screen and (max-width: 450px){
+          
+            height: 350px;
+            width: 350px;
+        }
+        @media screen and (max-width: 350px){
+          
+            height: 250px;
+            width: 250px;
+        }
+
+
+    }
+
+    .answers{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 45%;
+        align-self: flex-start;
+
+        @media screen and (max-width: 1000px){
+            align-self: center;
+            width: 90%;
+            
+        }
+
+        .topic-answers{
+            background-color: rgba(45, 104, 147, 0.8);
+            color: $white;
+            padding: 1rem;
+            font-family: 'rubikRegular' ,'Courier New', Courier, monospace;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            border-radius: 2px;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .answer-topic{
+                padding: 1rem;
+                background-color: rgba(45, 104, 147, 0.9);
+                margin-top: 0.3rem;
+                border-radius: 2px;
+                color: $white;
+                font-family: 'rubikMedium','Courier New', Courier, monospace;
+            }
+
+        
 
     }
 

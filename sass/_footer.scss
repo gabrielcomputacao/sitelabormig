@@ -10,7 +10,23 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 7rem;
+
+    @media screen and (max-width: 1400px){
+          
+        padding: 1.5rem 3rem;
+        
+    }
+    @media screen and (max-width: 1100px){
+          
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        
+        
+    }
+
+
 }
 
 .contatos, .localizacao{
@@ -26,6 +42,8 @@
         color: $white;
         margin-bottom: 1.5rem;
         font-weight: 700;
+        text-decoration: underline;
+        font-family:  'rubikRegular' ,'Courier New', Courier, monospace;
     }
 
     ul {
@@ -36,7 +54,8 @@
         justify-content: start;
         align-items: flex-start;
         color: $white;
-            font-size: 14px;
+        font-size: 14px;
+        font-family:  'rubikRegular' ,'Courier New', Courier, monospace;
         li{
             span{
                 
@@ -48,4 +67,23 @@
     }
 
 
+}
+
+.sociais{
+
+    p{
+        font-size: 24px;
+        color: $white;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        text-decoration: underline;
+        font-family:  'rubikRegular' ,'Courier New', Courier, monospace;
+    }
+
+
+    ul{
+        display: flex;
+        gap: 2rem;
+
+    }
 }
