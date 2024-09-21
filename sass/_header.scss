@@ -34,8 +34,6 @@
 }
 
 .menu-header{
-
-
     .menus{
         display: flex;
         justify-content: center;
@@ -47,7 +45,7 @@
             display: none;
         }
 
-        a{
+        .menus-links{
             text-align: center;
             color: $darkgray;
             font-family: 'rubikRegular' ,'Courier New', Courier, monospace;
@@ -58,7 +56,57 @@
             font-weight: 600;
             
         }
+        #atuacao {
+            text-align: center;
+            color: $darkgray;
+            font-family: 'rubikRegular' ,'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            position: relative;
+            cursor: pointer;
+        }
 
+        .areas_atuacao{
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 200px;
+            height: auto;
+            border: 1px solid #333;
+            z-index: 4;
+            background-color: #fff;
+            border-radius: 2px;
+
+            .areas_atuacao_menu{
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                align-items: start;
+                width: 100%;
+                text-align: left;
+
+                a{
+                    padding: 10px;
+                    border-bottom: 1px solid #333;
+                    width: 100%;
+
+                    &:visited{
+                        color: inherit;
+                    }
+
+                    &:hover{
+                        background-color: $bluestrong;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+
+        }
 
     }
 
@@ -123,4 +171,7 @@
     }
 
 
+}
+.submenu-invi{
+    display: none;
 }
