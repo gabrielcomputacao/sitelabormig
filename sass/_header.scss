@@ -168,10 +168,35 @@
                     padding-top: 1.1em;
                 }
         }
+        span{
+            
+                text-align: center;
+                color: $white;
+                width: 100%;
+                border-bottom: 1px solid $white;
+                padding: 1.1em 0;     
+        }
+
+        .subtitle-mobile{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            a{
+            
+                text-align: center;
+                color: $white;
+                width: 100%;
+                border-bottom: 1px solid $white;
+                padding: 1.1em 0;
+                background-color: #333;              
+        }
+        }
     }
 
 
 }
 .submenu-invi{
-    display: none;
+    display: none !important;
 }

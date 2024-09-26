@@ -40,3 +40,10 @@ document.addEventListener("click", function (event) {
     areas_atuacao.classList.add("submenu-invi");
   }
 });
+
+const areas = document.querySelector("#areas");
+const subTitleMob = document.querySelector("#subtitleMob");
+
+areas.addEventListener("click", () => {
+  subTitleMob.classList.toggle("submenu-invi");
+});

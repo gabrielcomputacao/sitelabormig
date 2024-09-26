@@ -1,0 +1,107 @@
+
+@import 'variavels';
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.cta-lagormig{
+    padding: 1.5rem 5rem;
+    background-color: $bluelight;
+    color: $white;
+    margin-bottom: 1.5rem;
+
+    h3{
+        font-size: 30px;
+        font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+
+        @media screen and (max-width: 600px){
+            font-size: 24px;
+        }
+
+    }
+
+    .content-cta{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+
+
+        button{
+            padding: 1rem 6rem;
+            border-radius: 5px;
+            border: none;
+            color: $white;
+            background-color: green;
+            font-size: 20px;
+            font-family: 'rubikSemiBold', 'Courier New', Courier, monospace;
+        }
+
+        @media screen and (max-width: 900px){
+            flex-direction: column;
+            text-align: center;
+        }
+
+    }
+
+}
+
+
+#diferenciais{
+
+    margin-bottom: 1.5rem;
+
+    h3{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 24px;
+        color: $bluestrong;
+        font-family: 'rubikSemiBold', 'Courier New', Courier, monospace;
+    }
+}
+
+.content-diferenciais{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .card-diff{
+        width: 250px;
+        height: 230px;
+        border: none;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+        border-radius: 2px;
+        background-color: $green-light;
+
+        .content-card-tittle{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: start;
+        }
+        
+        
+
+        h4{
+            padding-bottom: 10px;
+            text-decoration: underline;
+            color: $white;
+            font-size: 1.25rem;
+            min-height: 50px;
+            font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+        }
+        p{
+            align-self: self-start;
+            color: #dfdfdf;
+            font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+        }
+    }
+}
+
+
