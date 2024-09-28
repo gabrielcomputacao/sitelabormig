@@ -11,13 +11,18 @@
     color: $white;
     margin-bottom: 1.5rem;
 
+
     h3{
         font-size: 30px;
         font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+        max-width: 60%;
+        line-height: 40px;
 
         @media screen and (max-width: 600px){
             font-size: 24px;
+            max-width: 100%;
         }
+
 
     }
 
