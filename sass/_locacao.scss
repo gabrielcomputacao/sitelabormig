@@ -31,9 +31,15 @@
         align-items: center;
         justify-content: space-around;
         gap: 20px;
-
+        
+        
+        a{
+            cursor: pointer;
+        }
+        
 
         button{
+            cursor: pointer;
             padding: 1rem 6rem;
             border-radius: 5px;
             border: none;
