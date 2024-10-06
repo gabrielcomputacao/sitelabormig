@@ -116,6 +116,11 @@ main{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
 
+    .img-mosaico{
+        box-shadow: none;
+        border-radius: 5px;
+    }
+
     @media screen and (max-width: 450px){
         height: 350px;
         width: 350px;
