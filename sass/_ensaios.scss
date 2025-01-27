@@ -1,0 +1,144 @@
+
+.ensaios-limites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+    @media screen and (max-width:800px){
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .content-limites{
+        border: 1px solid $white;
+        align-self: flex-start;
+        padding: 20px;
+        border-radius: 2px;
+        min-height: 350px;
+        width: 40%;
+        color: $white;
+        font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+
+        @media screen and (max-width:800px){
+            width: 100%;
+        }
+
+
+        h3{
+            font-size: 26px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+
+            @media screen and (max-width:800px){
+                font-size: 22px;
+            }
+
+
+        }
+
+        p{
+            font-size: 20px;
+            margin-bottom: 40px;
+            line-height: 22px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+    }
+}
+
+.topics-application{
+    color: $bluestrong;
+}
+.topics-application-green{
+    color: #036752;
+}
+
+
+.results{
+    margin-top: 2rem;
+    h2{
+        color: #036752 !important;
+    }
+}
+
+.shadow-image{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; 
+    
+}
+
+.border-radius-none{
+    border-radius: 0 !important;
+}
+
+/* section origin */
+
+#origin{
+    background-color: #1b8671;
+    padding: 10px 0;
+}
+
+.origin{
+
+    width: 100%;
+
+    h3{
+        font-size: 26px;
+        text-align: center;
+        font-weight: 600;
+        font-family: 'rubikSemiBold','Courier New', Courier, monospace;
+        color: #eee;
+
+        @media screen and (max-width:800px){
+            font-size: 22px;
+        }
+    }
+
+        .content-origin-text{
+            padding: 20px;
+            font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+            font-size: 20px;
+            line-height: 24px;
+            color: #fff;
+        }
+}
+
+.section-green{
+    background-color: #036752;
+    width: 100%;
+    color: #fff;
+    padding: 20px 0 10px 0;
+
+    h3{
+        font-size: 26px;
+        text-align: center;
+        font-weight: 600;
+        font-family: 'rubikSemiBold','Courier New', Courier, monospace;
+        color: #fff;
+
+        @media screen and (max-width:800px){
+            font-size: 22px;
+        }
+    }
+
+    p{
+            padding: 20px 40px;
+            font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+            font-size: 20px;
+            line-height: 24px;
+            color: #fff;
+    }
+
+}

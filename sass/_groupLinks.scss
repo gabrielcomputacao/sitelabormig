@@ -1,0 +1,68 @@
+
+.content-group-links{
+    border: 1px solid #f3f3f3;
+    padding: 10px 0 20px 0;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-group-link{
+
+    margin-top: 20px;
+
+    h1{
+        padding: 10px;
+        text-align: center;
+        color: $greendark;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    p{
+        text-align: center;
+        font-size: 22px;
+        padding: 20px 20px 0 20px;
+
+        @media screen and (max-width: 1000px){
+            margin-bottom: 40px;
+        }
+
+
+    }
+}
+
+.flex-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1020px;
+    width: 100%;
+    margin: auto;
+
+    a{
+        width: 320px;
+        text-align: center;
+        height: 100%;
+        
+        div{
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+
+
+}
+
+.card-linksEnsaios{
+    border: 1px solid $bluelight;
+    padding: 20px;
+    border-radius: 2px;
+}

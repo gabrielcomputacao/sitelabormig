@@ -54,13 +54,14 @@
         justify-content: start;
         align-items: flex-start;
         color: $white;
-        font-size: 14px;
+        font-size: 18px;
         font-family:  'rubikRegular' ,'Courier New', Courier, monospace;
         li{
             span{
                 
                 font-size: 20px;
                 font-weight: bold;
+                line-height: 26px;
             }
             
         }

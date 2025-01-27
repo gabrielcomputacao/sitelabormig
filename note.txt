@@ -1,1 +1,14 @@
 https://solocap.com.br/
+
+
+----------
+
+http://localhost/projetos/sitelabormig/
+
+php-cgi.exe -b 127.0.0.1:9000 
+
+
+cd C:\Nginx
+.\nginx.exe
+
+nginx -s stop

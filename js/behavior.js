@@ -47,3 +47,15 @@ const subTitleMob = document.querySelector("#subtitleMob");
 areas.addEventListener("click", () => {
   subTitleMob.classList.toggle("submenu-invi");
 });
+
+
+const ensaios = document.querySelector("#ensaios");
+const subTitleMobEnsaios = document.querySelector("#subtitleMobEnsaios");
+
+ensaios.addEventListener("click", () => {
+  subTitleMobEnsaios.classList.toggle("submenu-invi");
+});
+
+
+
+

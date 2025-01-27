@@ -77,14 +77,253 @@ main{
         margin: 0 auto;
         line-height: 2.3rem;
         color: $bluelight;
-        
+
+        @media screen and (max-width:450px){ 
+            font-size: 24px;
+        }
     }
 
     @media screen and (max-width: 1000px){
         text-align: center;
     }
-    
+
+    .title-ensaios{
+        text-align: center;
+        margin-top: 20px;
+    } 
 }
+
+#process{
+    
+    background-color: $green-light;
+    padding: 20px 0 40px 0;
+    
+    .process-wrapper{
+        margin: 0px auto;
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+            padding: 0.3rem 0 1rem 0 ;
+            font-family: 'rubikSemiBold','Courier New', Courier, monospace;
+            margin: 0 auto;
+            line-height: 2.3rem;
+            color: $white;
+        }
+
+        .process{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            @media screen and (max-width:1000px){
+               
+                padding: 0 20px;
+            }
+    
+            .content-process{
+                display: flex;
+                gap: 20px;
+                width: 100%;
+
+                @media screen and (max-width:1000px){
+                    flex-direction: column;
+                    
+                }
+    
+                .item-process{
+                    background-color: $white;
+                    width: 50%;
+                    padding: 20px;
+                    border: 1px solid $bluelight;
+                    border-radius: 2px;
+                    font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+                    line-height: 24px;
+                    font-size: 20px;
+
+                    @media screen and (max-width:1000px){
+                        width: 100%;
+                    }
+
+                    .span-number{
+                        font-size: 33px;
+                        font-weight: bold;
+                        color: $bluestrong;
+                    }
+
+                    .span-title{
+                        color: $bluelight;
+                        font-weight: 800;
+                        font-size: 24px;
+                    }
+
+
+                }
+
+            }
+            .item-process-full{
+                width: 100%;
+                padding: 20px;
+                background-color: $white;
+                border: 1px solid $bluelight;
+                border-radius: 2px;
+                font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+                line-height: 28px;
+                font-size: 20px;
+
+                
+
+                .span-number{
+                    font-size: 33px;
+                    font-weight: bold;
+                    color: $bluestrong;
+                }
+
+                .span-title{
+                    color: $bluelight;
+                    font-weight: 800;
+                    font-size: 24px;
+                    
+                }
+            }
+        }
+    }
+
+}
+
+#objective{ 
+
+    .content-objective{
+
+        padding: 20px 0 40px 0;
+
+        @media screen and (max-width:1000px){
+            flex-direction: column;
+            padding: 20px 20px 40px 20px;
+        }
+        
+        .objective-title{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 20px;
+
+             h2{
+                font-size: 30px;
+                font-family: 'rubikSemiBold','Courier New', Courier, monospace;
+                line-height: 2.3rem;
+                color: $bluelight;
+                text-align: center;
+                align-self: flex-end;
+             }
+        }
+
+        .wrapper-objective{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .wrapper-content-objective{
+                padding: 10px;
+                font-size: 22px;
+                line-height: 28px;
+                background-color: #f3f3f3;
+                border: 1px solid #222;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                max-width: 1280px;
+                font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+            }
+        }
+
+    }
+}
+
+
+#application{
+    .content-title-aplication{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        h2{
+            font-size: 30px;
+            font-family: 'rubikSemiBold','Courier New', Courier, monospace;
+            line-height: 2.3rem;
+            color: $bluelight;
+            text-align: center;
+            align-self: flex-end;
+
+            @media screen and (max-width:450px){
+                padding: 0 10px;
+                font-size: 22px;
+            }
+
+        }
+    }
+
+    .content-application{
+
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+
+        @media screen and (max-width:1000px){
+            padding: 0 10px;
+            
+        }
+
+        .content-text{
+            margin-top: 20px;
+            align-self: flex-start;
+            width: 70%;
+            padding: 10px;
+            font-size: 22px;
+            line-height: 28px;
+            font-family: 'rubikRegular', 'Courier New', Courier, monospace;
+        
+            @media screen and (max-width:1000px){
+               text-align: center;
+                width: 100%;
+            }
+        
+        }
+
+        .content-img{
+
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 30%;
+            border-radius: 2px;
+
+            
+
+            img{
+                border-radius: 2px;
+                height: 200px;
+                width: 100%;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+            }
+
+            @media screen and (max-width:750px){
+                display: none;
+                
+            }
+            
+        }
+    }
+}
+
 
 
 .content-introduction{
@@ -102,8 +341,6 @@ main{
 
 }
 
-
-
 .introduction-img{
     width: 450px;
     height: 450px;
@@ -112,8 +349,8 @@ main{
     img{
         width: 100%;
         height: 100%;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        
     }
 
     .img-mosaico{
@@ -156,7 +393,7 @@ main{
         border: none;
         cursor: pointer;
         font-weight: 700;
-        border-radius: 5px;
+        border-radius: 2px;
         font-family: 'rubikRegular', 'Courier New', Courier, monospace;
     }
 
@@ -171,6 +408,7 @@ main{
        background-color: rgba(45, 104, 147, 0.8);
        color: $white;
        margin-top: 1rem;
+       border-radius: 2px;
 
         p{
             font-family: 'rubikLight','Courier New', Courier, monospace;
@@ -199,6 +437,7 @@ main{
         margin: 0 auto;
         max-width: 800px;
         margin-bottom: 2rem;
+        border-radius: 2px;
 
         @media screen and (max-width: 800px){
             width: 90%;
@@ -298,6 +537,7 @@ main{
         color: $white;
         max-width: 800px;
         margin: 0 auto;
+        border-radius: 2px;
 
         @media screen and (max-width: 800px){
             width: 90%;
@@ -318,7 +558,7 @@ main{
     .card-service{
 
         width: 350px;
-        height: 390px;
+        height: 420px;
         box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
@@ -373,13 +613,16 @@ main{
 
             display: flex;
             justify-content: flex-end;
-            padding: 0.7rem;
+            padding: 1.2rem;
             
             a{
-                color: $bluestrong;
-                text-decoration: underline;
+                background-color: rgba(3, 103, 82, 0.8);
+                color: $white;
+                text-decoration: none;
+                padding: 5px;
                 font-size: 18px;
-                font-weight: 500;
+                font-weight: 600;
+                border-radius: 2px;
             }
 
         }
@@ -400,6 +643,7 @@ main{
             color: $white;
             max-width: 800px;
             margin: 0 auto;
+            border-radius: 2px;
 
             @media screen and (max-width: 800px){
                 width: 90%;
@@ -477,6 +721,7 @@ main{
 
         .topic-answers{
             background-color: rgba(45, 104, 147, 0.8);
+            border-radius: 2px;
             color: $white;
             padding: 1rem;
             font-family: 'rubikRegular' ,'Courier New', Courier, monospace;
@@ -490,6 +735,7 @@ main{
         .answer-topic{
                 padding: 1rem;
                 background-color: rgba(45, 104, 147, 0.9);
+                border-radius: 2px;
                 margin-top: 0.3rem;
                 border-radius: 2px;
                 color: $white;
