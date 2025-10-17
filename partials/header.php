@@ -34,23 +34,19 @@ foreach (explode('/', $pagePath) as $item) {
                 <div class="menus">
                     <?php if (!$pageSmallHeader): ?>
                         <a href="#home" class="menus-links">
-                            <img src="<?= getPath('assets/icons/house.png', 1) ?>" alt="Labormig | Home">
+
                             Home</a>
 
                         <a href="#introduction" class="menus-links">
-                            <img src="<?= getPath('assets/icons/grupo.png', 1) ?>" alt="Labormig | Nós">
+
                             Sobre Nós</a>
                         <a href="#service" class="menus-links">
-                            <img
-                                src="<?= getPath('assets/icons/servico-de-gestao.png', 1) ?>"
-                                alt="Labormig | Serviços">
+
                             Serviços</a>
 
                         <div id="atuacao">
-                            <img
-                                src="<?= getPath('assets/icons/dashboard.png', 1) ?>"
-                                alt="Labormig | Áreas de atuação" />
-                            Áreas de <br />
+
+                            Áreas de
                             Atuação
                             <div class="areas_atuacao submenu-invi">
                                 <div class="areas_atuacao_menu">
@@ -74,34 +70,26 @@ foreach (explode('/', $pagePath) as $item) {
                             </div>
                         </div>
                         <a href="#duvidas" class="menus-links">
-                            <img
-                                src="<?= getPath('assets/icons/perguntas-frequentes.png', 1) ?>"
-                                alt="Labormig | Dúvidas">
+
                             Dúvidas</a>
                         <a href="#resultados" class="menus-links">
-                            <img
-                                src="<?= getPath('assets/icons/resultados.png', 1) ?>"
-                                alt="Labormig | Resultados">
+
                             Meus Resultados</a>
                     <?php else: ?>
                         <a href="<?= getPath('main.php#home', 1) ?>" class="menus-links">
-                            <img src="<?= getPath('assets/icons/house.png', 1) ?>" alt="Labormig | Home">
+
                             Home</a>
 
                         <a href="<?= getPath('main.php#introduction', 1) ?>" class="menus-links">
-                            <img src="<?= getPath('assets/icons/grupo.png', 1) ?>" alt="Labormig | Nós">
+
                             Sobre Nós</a>
                         <a href="<?= getPath('main.php#service', 1) ?>" class="menus-links">
-                            <img
-                                src="<?= getPath('assets/icons/servico-de-gestao.png', 1) ?>"
-                                alt="Labormig | Serviços">
+
                             Serviços</a>
 
                         <div id="atuacao">
-                            <img
-                                src="<?= getPath('assets/icons/dashboard.png', 1) ?>"
-                                alt="Labormig | Áreas de atuação" />
-                            Áreas de <br />
+
+                            Áreas de
                             Atuação
                             <div class="areas_atuacao submenu-invi">
                                 <div class="areas_atuacao_menu">
@@ -123,14 +111,10 @@ foreach (explode('/', $pagePath) as $item) {
                             </div>
                         </div>
                         <a href="<?= getPath('main.php#duvidas', 1) ?>" class="menus-links">
-                            <img
-                                src="<?= getPath('assets/icons/perguntas-frequentes.png', 1) ?>"
-                                alt="Labormig | Dúvidas">
+
                             Dúvidas</a>
                         <a href="#resultados" class="menus-links">
-                            <img
-                                src="<?= getPath('assets/icons/resultados.png', 1) ?>"
-                                alt="Labormig | Resultados">
+
                             Meus Resultados</a>
                     <?php endif; ?>
 

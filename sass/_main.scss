@@ -11,10 +11,7 @@ main{
 
 .banner{
     width: 100%;
-    height: 550px;
-    background-image: url('../assets/images/obragrande.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 410px;
     position: relative;
 
     @media screen and (max-width: 500px){
@@ -24,6 +21,18 @@ main{
 
 }
 
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .banner-text{
     position: absolute;
     top: 120px;
@@ -31,6 +40,7 @@ main{
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 1rem;
     border-radius: 2px;
+    z-index: 9;
 
     h2{
         font-size: 50px;
@@ -387,13 +397,13 @@ main{
     button{
         padding: 0.8rem 4rem;
         color: $white;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-top: 3rem;
         background-color: rgba(3, 103, 82, 0.8);
         border: none;
         cursor: pointer;
         font-weight: 700;
-        border-radius: 2px;
+        border-radius: 10px;
         font-family: 'rubikRegular', 'Courier New', Courier, monospace;
     }
 
@@ -471,13 +481,12 @@ main{
                     
                         li{
                             background-color: rgba(246, 242, 242, 0.6);
-                            width: auto;
                             width: 300px;
                             min-height: 100px;
                             padding: 1rem;
                             text-align: center;
                             border-radius: 5px;
-                            gap: 0.5rem;
+                            gap: 1.3rem;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
@@ -487,6 +496,15 @@ main{
                             @media screen and (max-width: 300px){
                                 width: 90%;
                     
+                            }
+
+                            img{
+                                height: 70%;
+                                width: 270px;
+                            }
+
+                            p{
+                                font-size: 18px;
                             }
 
 
@@ -501,7 +519,7 @@ main{
 
                                     span{
                                         background-color: rgba(3, 103, 82, 0.8);
-                                        padding: 0.2rem 0.5rem;
+                                        padding: 0.5rem 1rem;
                                         color: $white;
                                         border-radius: 2px;
                                     }
@@ -606,7 +624,10 @@ main{
                 font-size: 16px;
                 font-family: 'rubikRegular','Courier New', Courier, monospace;
                 justify-self: start;
+                line-height: 1.3rem;
             }
+
+           
         }
         
         .card-link{ 
@@ -619,10 +640,11 @@ main{
                 background-color: rgba(3, 103, 82, 0.8);
                 color: $white;
                 text-decoration: none;
-                padding: 5px;
+                padding: 0.5rem 1rem;
                 font-size: 18px;
                 font-weight: 600;
-                border-radius: 2px;
+                border-radius: 4px;
+                font-family: 'rubikRegular','Courier New', Courier, monospace;
             }
 
         }
@@ -731,6 +753,7 @@ main{
             border-radius: 2px;
             justify-content: space-between;
             cursor: pointer;
+            line-height: 1.4rem;
         }
         .answer-topic{
                 padding: 1rem;
@@ -739,6 +762,7 @@ main{
                 margin-top: 0.3rem;
                 border-radius: 2px;
                 color: $white;
+                line-height: 1.4rem;
                 font-family: 'rubikMedium','Courier New', Courier, monospace;
             }
 

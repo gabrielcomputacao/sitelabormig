@@ -16,15 +16,15 @@
             <p>Localização</p>
             <ul>
                 <li>
-                    <span>Endereço: </span>R. SOLDADO DOMINGOS BRANDAO, 640
+                    <span>Endereço: </span>Rua herois da fe, 135
                     <br />
                 </li>
                 <li>
-                    <span>Município: </span>Divinópolis - MG
+                    <span>Município: </span>Betim - MG
                 </li>
                 <li>
-                    <span>Bairro:</span> REALENGO &nbsp;&nbsp;&nbsp;
-                    <span>CEP:</span> 35501-409
+                    <span>Bairro:</span> Cruzeiro &nbsp;&nbsp;&nbsp;
+                    <span>CEP:</span> 32661-320
                 </li>
             </ul>
         </div>

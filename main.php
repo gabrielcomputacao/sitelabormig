@@ -12,6 +12,9 @@
 
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -51,7 +54,33 @@
 
     <main>
         <div id="home" class="banner">
-            <div class="banner-text">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/obrabanner1.webp" alt="Imagem 1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/obrabanner2.webp" alt="Imagem 2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/obrabanner3.webp" alt="Imagem 3" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/obrabanner4.webp" alt="Imagem 3" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/obrabanner5.webp" alt="Imagem 3" />
+                    </div>
+                </div>
+
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--  <div class="banner-text">
                 <h2>
                     Labormig - A experiência <br> que faz a diferença!
                 </h2>
@@ -59,7 +88,7 @@
                     Qualidade e inovação<br> em cada detalhe.
                 </h5>
                 <p></p>
-            </div>
+            </div> -->
         </div>
         <div id="introduction" class="container">
             <section>
@@ -83,7 +112,6 @@
                             </div>
                             <a href="https://wa.me/553799491369?text=Ol%C3%A1%2C+gostaria+de+fazer+um+or%C3%A7amento.">
                                 <button>Peça um orçamento agora !</button>
-
                             </a>
                         </div>
                         <div class="introduction-img">
@@ -107,11 +135,10 @@
                                 <ul>
                                     <li>
                                         <img
-                                            src="./assets/icons/tubos-de-ensaio.png"
-                                            width="32"
-                                            height="32"
-                                            alt="" />
-                                        Ensaios de solos
+                                            src="./assets/images/ENSAIOS DE SOLOS.webp"
+                                            alt="Ensaios de solo" />
+                                        <p>Ensaios de solos</p>
+
                                         <a href="./groupEnsaiosSolos.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -120,11 +147,10 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/concreto.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Ensaios de concreto
+                                            src="./assets/images/ENSAIOS DE CONCRETO.webp"
+                                            alt="Concreto" />
+                                        <p>Ensaios de concreto</p>
+
                                         <a href="./concreto.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -133,11 +159,10 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/frasco.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Ensaios de asfalto
+                                            src="./assets/images/ENSAIOS DE ASFALTO.webp"
+                                            alt="frasco" />
+                                        <p>Ensaios de asfalto</p>
+
                                         <a href="./asfalto.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -146,11 +171,10 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/predio-comercial.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Fiscalização e acompanhamento
+                                            src="./assets/images/FISCALIZAÇAO E ACOMPANHAMENTO.webp"
+                                            alt="Fiscalização e acompanhamento" />
+                                        <p>Fiscalização e acompanhamento</p>
+
                                         <a href="./solos.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -159,11 +183,10 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/descida-ingreme.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Equipamentos
+                                            src="./assets/images/EQUIPAMENTOS.webp"
+                                            alt="Equipamentos" />
+                                        <p>Equipamentos</p>
+
                                         <a href="./vendas.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -172,11 +195,10 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/carga.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Locação de equipamentos
+                                            src="./assets/images/LOCAÇÃO DE EQUIPAMENTOS.webp"
+                                            alt="Locação de equipamentos" />
+                                        <p>Locação de equipamentos</p>
+
                                         <a href="./locacao.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -185,11 +207,10 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/estrada.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Aplicação de asfalto
+                                            src="./assets/images/APLICAÇÃO DE ASFALTO.webp"
+                                            alt="Aplicação de asfalto" />
+                                        <p>Aplicação de asfalto</p>
+
                                         <a href="./asfalto.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -199,11 +220,10 @@
 
                                     <li>
                                         <img
-                                            src="./assets/icons/pavimentacao.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Aplicação de TSD
+                                            src="./assets/images/APLICAÇÃO DE TSD.webp"
+                                            alt="Aplicação de TSD" />
+                                        <p>Aplicação de TSD</p>
+
                                         <a href="./asfalto.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -212,11 +232,10 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/quimico.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Ensaios para materiais de contrução
+                                            src="./assets/images/ENSAIOS MATERIAIS CONSTRUÇÃO.webp"
+                                            alt="Ensaios para materiais de contrução" />
+                                        <p>Ensaios para materiais de contrução</p>
+
                                         <a href="./ensaios.php">
                                             <div>
                                                 <span> Saiba Mais </span>
@@ -225,30 +244,28 @@
                                     </li>
                                     <li>
                                         <img
-                                            src="./assets/icons/aperto-de-mao.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Nossos Parceiros
+                                            src="./assets/images/NOSSOS PARCEIROS.webp"
+                                            alt="Parceiros" />
+                                        <p>Nossos Parceiros</p>
+
                                         <a href="#">
                                             <div>
                                                 <span> Saiba Mais </span>
                                             </div>
                                         </a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <img
-                                            src="./assets/icons/equipe.png"
-                                            alt=""
-                                            width="32"
-                                            height="32" />
-                                        Trabalhe conosco
+                                            src="./assets/images/trab"
+                                            alt="Trabalhe conosco" />
+                                        <p>Trabalhe conosco</p>
+
                                         <a href="#footer">
                                             <div>
                                                 <span> Saiba Mais </span>
                                             </div>
                                         </a>
-                                    </li>
+                                    </li> -->
 
                                 </ul>
                             </div>
@@ -267,7 +284,7 @@
                                 <div class="card-service-img">
                                     <img src="./assets/images/concreto.webp" alt="Labormig | Concreto" />
                                 </div>
-                                <div class="card-service-content">
+                                <div class="card-service-content" style="padding-bottom: 0;">
                                     <h3>Concretos e Obras de Arte Correntes e Especiais</h3>
                                     <p>
                                         Aplicações tecnológicas avançadas para garantir a
@@ -414,7 +431,30 @@
 
     <?php require  __DIR__ . "/partials/footer.php" ?>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            loop: true,
+            speed: 1200,
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
