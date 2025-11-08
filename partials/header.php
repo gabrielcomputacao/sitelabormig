@@ -55,6 +55,14 @@ foreach (explode('/', $pagePath) as $item) {
                                     <a href="<?= getPath('concreto.php', 1) ?>">Concreto</a>
                                     <span class="menu-ensaio">Ensaios
                                         <div id="submenu-ensaios" class="submenu-ensaios">
+                                            <a href="<?= getPath('groupEnsaiosAsfalto.php', 1) ?>">
+                                                <span>Asfalto
+                                                </span>
+                                            </a>
+                                            <a href="<?= getPath('groupEnsaiosConcreto.php', 1) ?>">
+                                                <span>Concreto
+                                                </span>
+                                            </a>
                                             <a href="<?= getPath('groupEnsaiosSolos.php', 1) ?>">
                                                 <span>Solos
                                                 </span>
@@ -98,6 +106,14 @@ foreach (explode('/', $pagePath) as $item) {
                                     <a href="<?= getPath('concreto.php', 1) ?>">Concreto</a>
                                     <span class="menu-ensaio">Ensaios
                                         <div id="submenu-ensaios" class="submenu-ensaios">
+                                            <a href="<?= getPath('groupEnsaiosAsfalto.php', 1) ?>">
+                                                <span>Asfalto
+                                                </span>
+                                            </a>
+                                            <a href="<?= getPath('groupEnsaiosConcreto.php', 1) ?>">
+                                                <span>Concreto
+                                                </span>
+                                            </a>
                                             <a href="<?= getPath('groupEnsaiosSolos.php', 1) ?>">
                                                 <span>Solos
                                                 </span>
@@ -158,6 +174,8 @@ foreach (explode('/', $pagePath) as $item) {
                     height="16" />
             </span>
             <div id="subtitleMobEnsaios" class="subtitle-mobile submenu-invi">
+                <a href="<?= getPath('groupEnsaiosAsfalto.php', 1) ?>">Asfalto</a>
+                <a href="<?= getPath('groupEnsaiosConcreto.php', 1) ?>">Concreto</a>
                 <a href="<?= getPath('groupEnsaiosSolos.php', 1) ?>">Solos</a>
 
             </div>
