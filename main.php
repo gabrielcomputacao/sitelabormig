@@ -151,7 +151,7 @@
                                             alt="Concreto" />
                                         <p>Ensaios de concreto</p>
 
-                                        <a href="./concreto.php">
+                                        <a href="./groupEnsaiosSolos.php">
                                             <div>
                                                 <span> Saiba Mais </span>
                                             </div>
@@ -163,7 +163,7 @@
                                             alt="frasco" />
                                         <p>Ensaios de asfalto</p>
 
-                                        <a href="./asfalto.php">
+                                        <a href="./groupEnsaiosAsfalto.php">
                                             <div>
                                                 <span> Saiba Mais </span>
                                             </div>

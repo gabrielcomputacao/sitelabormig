@@ -63,11 +63,19 @@ main{
     }
 
     @media screen and (max-width: 710px){
-        left: 0px;
-        width: 90%;
-        position: relative;
+        left: 10%;
+        width: 80%;
         margin:  0 auto;
         border-radius: 2px;
+        top: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h5{
+        font-size: 22px;
     }
 
 }

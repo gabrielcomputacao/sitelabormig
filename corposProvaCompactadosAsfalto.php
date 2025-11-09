@@ -40,9 +40,9 @@
                         </div>
                         <div class="introduction-img">
                             <img
-                                src="./assets/images/compactacaoSolo.webp"
-                                alt="Labormig | Compactação Solo"
-                                title="Labormig | Compactação Solo" />
+                                src="./assets/images/corposprovacompactados.webp"
+                                alt="Labormig | Corpos de prova compactados"
+                                title="Labormig | Corpos de prova compactados" />
                         </div>
                     </div>
                 </div>
@@ -101,10 +101,10 @@
                 <div class="content-text">
                     A determinação da massa específica aparente de corpos de prova compactados é fundamental para garantir a qualidade das misturas asfálticas. A norma NBR 16023 fornece um quadro de referência para garantir que as misturas asfálticas sejam projetadas para atender às necessidades específicas de cada pavimentação.
                 </div>
-                <div class="content-img">
+                <!-- <div class="content-img">
                     <img src="./assets/images/paving.webp" alt="Compactação do Solo (Proctor)" title="Compactação do Solo (Proctor)">
                     <img src="./assets/images/dam.webp" alt="Compactação do Solo (Proctor)" title="Compactação do Solo (Proctor)">
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
